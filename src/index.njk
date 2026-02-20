@@ -5,82 +5,104 @@ description: Профессиональный перевод документо�
 ---
 
 <!-- ═══════════════════════════════════════════
-     HERO  ·  Full-viewport editorial
+     HERO  ·  Dark editorial — Anthropic style
      ═══════════════════════════════════════════ -->
 <section class="hero" id="main">
 
-  <div class="hero__inner">
+  <div class="hero__top">
+    <div class="hero__eyebrow">Бюро переводов · Москва</div>
 
-    <div class="hero__content">
-
-      <div class="hero__eyebrow">
-        <div class="hero__eyebrow-dot"></div>
-        <span class="hero__eyebrow-text">Бюро переводов · Москва · с 2009 года</span>
-      </div>
-
-      <h1 class="hero__title">
-        Профессиональный<br>перевод<br>документов
-      </h1>
-
-      <p class="hero__sub">
-        Точная передача смыслов, отраслевая терминология
-        и юридическая сила документа. Работаем с более чем
-        30 языками мира — включая прямые переводы.
-      </p>
-
-      <div class="hero__actions">
-        <a href="/uslugi" class="btn-primary">
-          Наши услуги
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
-        </a>
-        <a href="#quote" class="btn-outline">Узнать стоимость</a>
-      </div>
-
-    </div>
-
-    <div class="hero__art" aria-hidden="true">
-      <svg viewBox="0 0 480 440" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <!-- Terracotta circle -->
-        <circle cx="330" cy="118" r="108" fill="#C8522A"/>
-        <!-- Faint ring inside -->
-        <circle cx="330" cy="118" r="76" stroke="rgba(255,255,255,0.25)" stroke-width="1.5" fill="none"/>
-        <!-- Terracotta tilted rect (document) -->
-        <rect x="248" y="248" width="128" height="158" rx="6" fill="#C8522A" opacity="0.82" transform="rotate(-9 312 327)"/>
-        <!-- Abstract calligraphic lines -->
-        <path d="M55 430 C72 392 82 352 96 302 C110 252 106 198 124 156 C142 114 168 94 188 74" stroke="#1A1715" stroke-width="4" stroke-linecap="round" fill="none"/>
-        <path d="M95 460 C124 418 165 368 208 316 C251 264 294 236 336 216" stroke="#1A1715" stroke-width="3" stroke-linecap="round" fill="none"/>
-        <!-- Dot joints -->
-        <circle cx="118" cy="274" r="7.5" fill="#1A1715"/>
-        <circle cx="318" cy="220" r="7.5" fill="#1A1715"/>
-        <!-- Plus accent -->
-        <line x1="192" y1="408" x2="192" y2="358" stroke="#1A1715" stroke-width="3.5" stroke-linecap="round"/>
-        <line x1="167" y1="383" x2="217" y2="383" stroke="#1A1715" stroke-width="3.5" stroke-linecap="round"/>
-      </svg>
-    </div>
-
+    <h1 class="hero__title">
+      <span class="hero__title-line">ПРОФЕССИОНАЛЬНЫЙ</span>
+      <span class="hero__title-line">ПЕРЕВОД <em>документов</em></span>
+    </h1>
   </div>
 
-  <!-- Dark stats bar -->
+  <!-- Large abstract globe — centerpiece -->
+  <div class="hero__globe" aria-hidden="true">
+    <svg viewBox="0 0 680 680" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="sphereGrad" cx="42%" cy="38%" r="50%">
+          <stop offset="0%" stop-color="#D4724A"/>
+          <stop offset="45%" stop-color="#C8522A"/>
+          <stop offset="80%" stop-color="#8B3518"/>
+          <stop offset="100%" stop-color="#3D1508"/>
+        </radialGradient>
+        <radialGradient id="glowGrad" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#C8522A" stop-opacity="0.15"/>
+          <stop offset="60%" stop-color="#C8522A" stop-opacity="0.05"/>
+          <stop offset="100%" stop-color="#C8522A" stop-opacity="0"/>
+        </radialGradient>
+        <clipPath id="sphereClip"><circle cx="340" cy="340" r="240"/></clipPath>
+      </defs>
+
+      <!-- Outer glow -->
+      <circle cx="340" cy="340" r="340" fill="url(#glowGrad)"/>
+
+      <!-- Main sphere -->
+      <circle cx="340" cy="340" r="240" fill="url(#sphereGrad)"/>
+
+      <!-- Surface details inside sphere clip -->
+      <g clip-path="url(#sphereClip)">
+        <!-- Meridians -->
+        <ellipse cx="340" cy="340" rx="80" ry="240" stroke="rgba(255,255,255,0.07)" stroke-width="1" fill="none"/>
+        <ellipse cx="340" cy="340" rx="160" ry="240" stroke="rgba(255,255,255,0.06)" stroke-width="0.8" fill="none"/>
+        <ellipse cx="340" cy="340" rx="240" ry="240" stroke="rgba(255,255,255,0.04)" stroke-width="0.6" fill="none"/>
+
+        <!-- Parallels -->
+        <ellipse cx="340" cy="220" rx="230" ry="40" stroke="rgba(255,255,255,0.06)" stroke-width="0.8" fill="none"/>
+        <ellipse cx="340" cy="340" rx="240" ry="50" stroke="rgba(255,255,255,0.07)" stroke-width="1" fill="none"/>
+        <ellipse cx="340" cy="460" rx="230" ry="40" stroke="rgba(255,255,255,0.05)" stroke-width="0.8" fill="none"/>
+
+        <!-- Language script fragments on surface -->
+        <text x="260" y="280" font-family="Georgia,serif" font-size="28" fill="rgba(255,255,255,0.12)" font-weight="400">Translate</text>
+        <text x="310" y="330" font-family="Georgia,serif" font-size="22" fill="rgba(255,255,255,0.08)">Перевод</text>
+        <text x="370" y="380" font-family="'Noto Sans SC',sans-serif" font-size="24" fill="rgba(255,255,255,0.09)">翻译</text>
+        <text x="280" y="420" font-family="Georgia,serif" font-size="18" fill="rgba(255,255,255,0.07)">Übersetzung</text>
+        <text x="350" y="260" font-family="'Noto Sans Arabic',sans-serif" font-size="20" fill="rgba(255,255,255,0.08)">ترجمة</text>
+        <text x="240" y="360" font-family="Georgia,serif" font-size="16" fill="rgba(255,255,255,0.06)">Traduction</text>
+        <text x="390" y="450" font-family="Georgia,serif" font-size="16" fill="rgba(255,255,255,0.06)">Traduzione</text>
+
+        <!-- Flowing curve across surface -->
+        <path d="M140 300 C220 260 300 310 380 280 C460 250 500 320 560 290" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        <path d="M120 400 C200 430 300 380 380 410 C460 440 520 390 580 420" stroke="rgba(255,255,255,0.05)" stroke-width="1" fill="none"/>
+
+        <!-- Highlight -->
+        <circle cx="290" cy="270" r="100" fill="rgba(255,255,255,0.06)"/>
+      </g>
+
+      <!-- Subtle rim light -->
+      <circle cx="340" cy="340" r="240" stroke="rgba(255,255,255,0.06)" stroke-width="1" fill="none"/>
+    </svg>
+  </div>
+
+  <div class="hero__bottom">
+    <p class="hero__sub">
+      Точная передача смыслов, отраслевая терминология
+      и&nbsp;юридическая сила документа. Более 30&nbsp;языков мира.
+    </p>
+    <div class="hero__actions">
+      <a href="/uslugi" class="hero__cta">
+        Наши услуги
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+      </a>
+      <a href="#quote" class="hero__cta hero__cta--ghost">Узнать стоимость</a>
+    </div>
+  </div>
+
+  <!-- Stats bar -->
   <div class="hero__statsbar" aria-label="Ключевые цифры">
     <div class="hero__stat"><span class="hero__stat-num">30+</span><span class="hero__stat-lbl">языков мира</span></div>
     <div class="hero__stat"><span class="hero__stat-num">15+</span><span class="hero__stat-lbl">лет на рынке</span></div>
     <div class="hero__stat"><span class="hero__stat-num">5000+</span><span class="hero__stat-lbl">переводов выполнено</span></div>
     <div class="hero__stat"><span class="hero__stat-num">1:1</span><span class="hero__stat-lbl">перевод с носителями</span></div>
   </div>
-
-  <!-- Language marquee strip -->
-  <div class="hero__marquee" aria-hidden="true">
-    <div class="hero__marquee-track">
-      <span>Английский &nbsp;·&nbsp; Немецкий &nbsp;·&nbsp; Французский &nbsp;·&nbsp; Испанский &nbsp;·&nbsp; Итальянский &nbsp;·&nbsp; Китайский &nbsp;·&nbsp; Японский &nbsp;·&nbsp; Арабский &nbsp;·&nbsp; Турецкий &nbsp;·&nbsp; Польский &nbsp;·&nbsp; Корейский &nbsp;·&nbsp; Португальский &nbsp;·&nbsp; Нидерландский &nbsp;·&nbsp; Шведский &nbsp;·&nbsp; Норвежский &nbsp;·&nbsp; Финский &nbsp;·&nbsp; Чешский &nbsp;·&nbsp; Венгерский &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-      <span>Английский &nbsp;·&nbsp; Немецкий &nbsp;·&nbsp; Французский &nbsp;·&nbsp; Испанский &nbsp;·&nbsp; Итальянский &nbsp;·&nbsp; Китайский &nbsp;·&nbsp; Японский &nbsp;·&nbsp; Арабский &nbsp;·&nbsp; Турецкий &nbsp;·&nbsp; Польский &nbsp;·&nbsp; Корейский &nbsp;·&nbsp; Португальский &nbsp;·&nbsp; Нидерландский &nbsp;·&nbsp; Шведский &nbsp;·&nbsp; Норвежский &nbsp;·&nbsp; Финский &nbsp;·&nbsp; Чешский &nbsp;·&nbsp; Венгерский &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-    </div>
-  </div>
 </section>
 
 <!-- ═══════════════════════════════════════════
      QUOTE  ·  Блок 2: форма заявки
      ═══════════════════════════════════════════ -->
-<section class="quote" id="quote">
+<section class="quote" id="quote" style="display:none">
   <div class="quote__inner">
 
     <div class="quote__left">
