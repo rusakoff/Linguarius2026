@@ -1,0 +1,28 @@
+---
+layout: post.njk
+title: Блог
+description: Статьи о переводе документов, апостиле, легализации и работе с документами для иностранных граждан.
+permalink: /blog/
+---
+
+<section class="blog-index">
+  <div class="blog-index__inner">
+    <div class="blog-index__label">Блог</div>
+    <h1 class="blog-index__title">Статьи и руководства</h1>
+
+    <div class="blog-index__grid">
+      {%- for post in collections.posts | reverse -%}
+      <a href="{{ post.url | url }}" class="blog-card">
+        {% if post.data.category %}<div class="blog-card__cat">{{ post.data.category }}</div>{% endif %}
+        <div class="blog-card__title">{{ post.data.title }}</div>
+        {% if post.data.excerpt %}<div class="blog-card__excerpt">{{ post.data.excerpt }}</div>{% endif %}
+        <div class="blog-card__meta">{{ post.data.datePublished }}</div>
+      </a>
+      {%- endfor -%}
+
+      {%- if collections.posts.length == 0 -%}
+      <div class="blog-index__empty">Статьи скоро появятся.</div>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
