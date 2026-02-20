@@ -5,22 +5,21 @@ description: Профессиональный перевод документо�
 ---
 
 <!-- ═══════════════════════════════════════════
-     HERO
+     HERO  ·  Full-viewport editorial
      ═══════════════════════════════════════════ -->
 <section class="hero" id="main">
 
   <div class="hero__inner">
 
     <div class="hero__content">
+
       <div class="hero__eyebrow">
         <div class="hero__eyebrow-dot"></div>
-        <span class="hero__eyebrow-text">Бюро переводов · Москва</span>
+        <span class="hero__eyebrow-text">Бюро переводов · Москва · с 2009 года</span>
       </div>
 
       <h1 class="hero__title">
-        Профессиональный<br>
-        перевод<br>
-        <em>документов</em>
+        Профессиональный<br>перевод<br>документов
       </h1>
 
       <p class="hero__sub">
@@ -37,38 +36,36 @@ description: Профессиональный перевод документо�
         <a href="#quote" class="btn-outline">Узнать стоимость</a>
       </div>
 
-      <div class="hero__trust">
-        <div class="hero__trust-item">15 лет на рынке</div>
-        <div class="hero__trust-item">Аккредитация МИД</div>
-        <div class="hero__trust-item">Нотариальное заверение</div>
-      </div>
     </div>
 
-    <div class="hero__card">
-      <div class="hero__card-head">
-        <div class="hero__card-tag">Бесплатная оценка</div>
-        <div class="hero__card-title">Оставьте заявку —<br>перезвоним и оценим</div>
-      </div>
-      <form class="hero__form" action="#" method="post">
-        <div class="hero__form-field">
-          <label class="hero__form-label" for="h-name">Ваше имя</label>
-          <input class="hero__input" id="h-name" type="text" name="name" placeholder="Имя Фамилия" required>
-        </div>
-        <div class="hero__form-field">
-          <label class="hero__form-label" for="h-phone">Телефон</label>
-          <input class="hero__input" id="h-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
-        </div>
-        <div class="hero__form-field" style="border-bottom:none;">
-          <label class="hero__form-label" for="h-comment">Что нужно перевести?</label>
-          <textarea class="hero__input hero__textarea" id="h-comment" name="comment" placeholder="Язык, объём, срочность…"></textarea>
-        </div>
-        <div class="hero__form-footer">
-          <button type="submit" class="hero__submit">Отправить заявку</button>
-          <p class="hero__card-note">Нажимая кнопку, вы соглашаетесь<br>с политикой обработки данных</p>
-        </div>
-      </form>
+    <div class="hero__art" aria-hidden="true">
+      <svg viewBox="0 0 480 440" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Terracotta circle -->
+        <circle cx="330" cy="118" r="108" fill="#C8522A"/>
+        <!-- Faint ring inside -->
+        <circle cx="330" cy="118" r="76" stroke="rgba(255,255,255,0.25)" stroke-width="1.5" fill="none"/>
+        <!-- Terracotta tilted rect (document) -->
+        <rect x="248" y="248" width="128" height="158" rx="6" fill="#C8522A" opacity="0.82" transform="rotate(-9 312 327)"/>
+        <!-- Abstract calligraphic lines -->
+        <path d="M55 430 C72 392 82 352 96 302 C110 252 106 198 124 156 C142 114 168 94 188 74" stroke="#1A1715" stroke-width="4" stroke-linecap="round" fill="none"/>
+        <path d="M95 460 C124 418 165 368 208 316 C251 264 294 236 336 216" stroke="#1A1715" stroke-width="3" stroke-linecap="round" fill="none"/>
+        <!-- Dot joints -->
+        <circle cx="118" cy="274" r="7.5" fill="#1A1715"/>
+        <circle cx="318" cy="220" r="7.5" fill="#1A1715"/>
+        <!-- Plus accent -->
+        <line x1="192" y1="408" x2="192" y2="358" stroke="#1A1715" stroke-width="3.5" stroke-linecap="round"/>
+        <line x1="167" y1="383" x2="217" y2="383" stroke="#1A1715" stroke-width="3.5" stroke-linecap="round"/>
+      </svg>
     </div>
 
+  </div>
+
+  <!-- Dark stats bar -->
+  <div class="hero__statsbar" aria-label="Ключевые цифры">
+    <div class="hero__stat"><span class="hero__stat-num">30+</span><span class="hero__stat-lbl">языков мира</span></div>
+    <div class="hero__stat"><span class="hero__stat-num">15+</span><span class="hero__stat-lbl">лет на рынке</span></div>
+    <div class="hero__stat"><span class="hero__stat-num">5000+</span><span class="hero__stat-lbl">переводов выполнено</span></div>
+    <div class="hero__stat"><span class="hero__stat-num">1:1</span><span class="hero__stat-lbl">перевод с носителями</span></div>
   </div>
 
   <!-- Language marquee strip -->
@@ -81,28 +78,53 @@ description: Профессиональный перевод документо�
 </section>
 
 <!-- ═══════════════════════════════════════════
-     STATS BAR
+     QUOTE  ·  Блок 2: форма заявки
      ═══════════════════════════════════════════ -->
-<div class="stats">
-  <div class="stats__inner">
-    <div class="stats__item">
-      <div class="stats__num">30<sup>+</sup></div>
-      <div class="stats__label">языков мира,<br>включая прямые переводы</div>
+<section class="quote" id="quote">
+  <div class="quote__inner">
+
+    <div class="quote__left">
+      <div class="section-label">Бесплатная оценка</div>
+      <h2 class="quote__title">Получите точную стоимость перевода за&nbsp;1&nbsp;час</h2>
+      <ul class="quote__benefits">
+        <li>Бесплатная консультация — без обязательств</li>
+        <li>Точный расчёт без скрытых платежей</li>
+        <li>Ответим в течение часа в рабочее время</li>
+        <li>Нотариальное заверение при необходимости</li>
+      </ul>
+      <div class="quote__contacts">
+        <a href="tel:+74957839656" class="quote__contact">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.09 1.18 2 2 0 012.07 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+          +7 (495) 783-96-56
+        </a>
+        <a href="https://t.me/linguarius" class="quote__contact">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.08 13.638 4.13 12.74c-.657-.21-.67-.657.136-.975l10.4-4.01c.548-.198 1.026.12.848.966z"/></svg>
+          Telegram @linguarius
+        </a>
+      </div>
     </div>
-    <div class="stats__item">
-      <div class="stats__num">15<sup>+</sup></div>
-      <div class="stats__label">лет на рынке<br>переводческих услуг</div>
+
+    <div class="quote__right">
+      <form class="quote__form" action="#" method="post">
+        <div class="quote__field">
+          <label class="quote__label" for="q-name">Ваше имя</label>
+          <input class="quote__input" id="q-name" type="text" name="name" placeholder="Имя Фамилия" required>
+        </div>
+        <div class="quote__field">
+          <label class="quote__label" for="q-phone">Телефон</label>
+          <input class="quote__input" id="q-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
+        </div>
+        <div class="quote__field" style="border-bottom:none;">
+          <label class="quote__label" for="q-comment">Что нужно перевести?</label>
+          <textarea class="quote__input quote__textarea" id="q-comment" name="comment" placeholder="Язык, объём, срочность…"></textarea>
+        </div>
+        <button type="submit" class="quote__submit">Получить оценку стоимости</button>
+        <p class="quote__note">Нажимая кнопку, вы соглашаетесь с <a href="/policy">политикой обработки данных</a></p>
+      </form>
     </div>
-    <div class="stats__item">
-      <div class="stats__num">5000<sup>+</sup></div>
-      <div class="stats__label">выполненных переводов<br>и легализаций</div>
-    </div>
-    <div class="stats__item">
-      <div class="stats__num">1<span style="color:var(--brand);font-family:var(--sans);">:</span>1</div>
-      <div class="stats__label">перевод носителями<br>и дипломированными специалистами</div>
-    </div>
+
   </div>
-</div>
+</section>
 
 <!-- ═══════════════════════════════════════════
      SERVICES
