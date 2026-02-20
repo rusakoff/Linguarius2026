@@ -26,7 +26,7 @@ jobs:
           cache: npm
 
       - run: npm ci
-      - run: npm run build
+      - run: ELEVENTY_PATH_PREFIX=/Linguarius2026/ npm run build
 
       - uses: actions/upload-pages-artifact@v3
         with:

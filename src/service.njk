@@ -14,9 +14,9 @@ eleventyComputed:
 <section class="svc-hero">
   <div class="svc-hero__inner">
     <nav class="svc-hero__breadcrumb" aria-label="Навигация">
-      <a href="/">Главная</a>
+      <a href="{{ '/' | url }}">Главная</a>
       <span>/</span>
-      <a href="/uslugi/">Услуги</a>
+      <a href="{{ '/uslugi/' | url }}">Услуги</a>
       <span>/</span>
       <span>{{ svc.title }}</span>
     </nav>
@@ -136,7 +136,7 @@ eleventyComputed:
         <textarea class="form-input form-textarea" id="q-message" name="message" placeholder="Опишите задачу — язык, объём, срочность…"></textarea>
       </div>
       <button type="submit" class="form-submit">Получить оценку стоимости</button>
-      <p class="form-note">Нажимая кнопку, вы соглашаетесь с <a href="/policy">политикой обработки данных</a></p>
+      <p class="form-note">Нажимая кнопку, вы соглашаетесь с <a href="{{ '/policy/' | url }}">политикой обработки данных</a></p>
     </form>
   </div>
 </section>

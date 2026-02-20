@@ -13,5 +13,6 @@ export default function (eleventyConfig) {
     templateFormats: ["html", "njk", "md"],
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
+    pathPrefix: process.env.ELEVENTY_PATH_PREFIX || "/",
   };
 }
