@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} | Linguarius</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a href="/" class="nav-logo">Lingu<span>arius</span></a>
+    <ul class="nav-links">
+      <li><a href="/posts/">Языки</a></li>
+      <li><a href="/posts/">Этимология</a></li>
+      <li><a href="/posts/">Фонетика</a></li>
+      <li><a href="/posts/">Диалекты</a></li>
+      <li><a href="/">О блоге</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="btn-subscribe">Подписаться</button>
+    </div>
+  </nav>
+
+  {{ content | safe }}
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">Linguarius</div>
+          <p class="footer-tagline">Блог о языках, словах<br>и том, как мы говорим о мире.</p>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Разделы</div>
+          <ul class="footer-links">
+            <li><a href="#">Этимология</a></li>
+            <li><a href="#">Фонетика</a></li>
+            <li><a href="#">Диалекты</a></li>
+            <li><a href="#">Нейролингвистика</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Блог</div>
+          <ul class="footer-links">
+            <li><a href="#">О проекте</a></li>
+            <li><a href="#">Авторы</a></li>
+            <li><a href="#">Архив</a></li>
+            <li><a href="#">RSS</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Контакт</div>
+          <ul class="footer-links">
+            <li><a href="#">Telegram</a></li>
+            <li><a href="#">Email</a></li>
+            <li><a href="#">Написать автору</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Linguarius</span>
+        <span>Сделано с любовью к словам</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

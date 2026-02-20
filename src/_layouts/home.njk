@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} | Linguarius — Бюро переводов</title>
+  <meta name="description" content="{{ description or 'Профессиональный перевод документов. Нотариальное заверение, апостиль, консульская легализация. Более 30 языков.' }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/home.css">
+</head>
+<body>
+
+  <nav class="hn">
+    <div class="hn__inner">
+      <a href="/" class="hn__logo">Lingu<span>arius</span></a>
+      <ul class="hn__links">
+        <li><a href="/uslugi">Услуги</a></li>
+        <li><a href="/blog">Блог</a></li>
+        <li><a href="/contacts">Контакты</a></li>
+      </ul>
+      <div class="hn__right">
+        <a href="tel:+74957839656" class="hn__phone">+7 (495) 783-96-56</a>
+        <a href="/contacts" class="hn__cta">Заказать</a>
+      </div>
+    </div>
+  </nav>
+
+  {{ content | safe }}
+
+  <footer class="hf">
+    <div class="hf__inner">
+      <div class="hf__top">
+        <div class="hf__brand">
+          <a href="/" class="hf__logo">Linguarius</a>
+          <p>Бюро переводов<br>в Москве</p>
+        </div>
+        <div class="hf__col">
+          <div class="hf__col-title">Услуги</div>
+          <ul>
+            <li><a href="/perevod">Перевод документов</a></li>
+            <li><a href="/notarius">Нотариальный перевод</a></li>
+            <li><a href="/legalization">Консульская легализация</a></li>
+            <li><a href="/apostil">Апостиль</a></li>
+            <li><a href="/verstka">Верстка документов</a></li>
+          </ul>
+        </div>
+        <div class="hf__col">
+          <div class="hf__col-title">Компания</div>
+          <ul>
+            <li><a href="/blog">Блог</a></li>
+            <li><a href="/contacts">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="hf__col">
+          <div class="hf__col-title">Контакт</div>
+          <ul>
+            <li><a href="tel:+74957839656">+7 (495) 783-96-56</a></li>
+            <li><a href="https://t.me/linguarius" target="_blank">Telegram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="hf__bottom">
+        <span>&copy; 2026 Linguarius. Все права защищены.</span>
+        <a href="/policy">Политика обработки данных</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
