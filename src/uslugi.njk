@@ -1,0 +1,88 @@
+---
+layout: home.njk
+title: Услуги
+description: Полный спектр услуг бюро переводов Linguarius — перевод документов, нотариальное заверение, апостиль, консульская легализация, верстка.
+permalink: /uslugi/
+---
+
+<section class="svc-hero">
+  <div class="svc-hero__inner">
+    <nav class="svc-hero__breadcrumb" aria-label="Навигация">
+      <a href="/">Главная</a>
+      <span>/</span>
+      <span>Услуги</span>
+    </nav>
+    <h1 class="svc-hero__title">Наши услуги</h1>
+    <p class="svc-hero__desc">Полный спектр услуг для работы с документами на иностранных языках — от перевода до легализации и апостилирования.</p>
+  </div>
+</section>
+
+<section class="svc-index">
+  <div class="svc-index__inner">
+    <div class="section-label">Что мы делаем</div>
+    <h2 class="section-title">Выберите нужную услугу</h2>
+
+    <div class="svc-index__grid">
+      {%- for svc in services %}
+      <a href="/{{ svc.slug }}/" class="svc-card">
+        <div class="svc-card__head">
+          <span class="svc-card__num">{{ svc.num }}</span>
+          <span class="svc-card__icon" aria-hidden="true">{{ svc.icon | safe }}</span>
+        </div>
+        <div class="svc-card__title">{{ svc.title }}</div>
+        <div class="svc-card__desc">{{ svc.shortDesc }}</div>
+        <span class="svc-card__link">Подробнее →</span>
+      </a>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="bottom-cta" id="quote">
+  <div class="bottom-cta__inner">
+    <div class="bottom-cta__left">
+      <div class="bottom-cta__label">Получите оценку</div>
+      <h2 class="bottom-cta__title">Узнайте стоимость</h2>
+      <p class="bottom-cta__sub">Бесплатная консультация и точная оценка стоимости. Свяжитесь с нами любым удобным способом.</p>
+      <div class="bottom-cta__contacts">
+        <a href="tel:+74957839656" class="bottom-cta__contact-item">
+          <div class="bottom-cta__contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.37 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.73a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div class="bottom-cta__contact-text">
+            <strong>+7 (495) 783-96-56</strong>
+            Пн–Пт, 9:00 – 18:00
+          </div>
+        </a>
+        <a href="https://t.me/linguarius" target="_blank" rel="noopener noreferrer" class="bottom-cta__contact-item">
+          <div class="bottom-cta__contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21.5 2.5L11 13M21.5 2.5L15 22l-4-9-9-4 19.5-6.5z"/></svg>
+          </div>
+          <div class="bottom-cta__contact-text">
+            <strong>Telegram: @linguarius</strong>
+            Ответим в течение часа
+          </div>
+        </a>
+      </div>
+    </div>
+    <form class="bottom-cta__form" action="#" method="post">
+      <div class="form-row">
+        <div class="form-field">
+          <label class="form-label" for="q-name">Имя</label>
+          <input class="form-input" id="q-name" type="text" name="name" placeholder="Ваше имя" required>
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="q-phone">Телефон</label>
+          <input class="form-input" id="q-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
+        </div>
+      </div>
+      <div class="form-field">
+        <label class="form-label" for="q-message">Что нужно перевести?</label>
+        <textarea class="form-input form-textarea" id="q-message" name="message" placeholder="Опишите задачу — язык, объём, срочность…"></textarea>
+      </div>
+      <button type="submit" class="form-submit">Получить оценку стоимости</button>
+      <p class="form-note">Нажимая кнопку, вы соглашаетесь с <a href="/policy">политикой обработки данных</a></p>
+    </form>
+  </div>
+</section>
